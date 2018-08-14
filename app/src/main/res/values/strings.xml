@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PixaBay</string>
+    <string name="total_likes">Total likes</string>
+    <string name="total_fav">Total favorites</string>
+    <string name="total_comments">Total comments</string>
+    <string name="details">Details</string>
+    <string name="message">Would you like to see the details of the image?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>
