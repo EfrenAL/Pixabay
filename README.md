@@ -43,12 +43,12 @@ Project is following Material Design guidelines.
 
 To display the images was used a RecyclerView Grid comosed by CardViews. Inside each cardview we have a another horizontal RecyclerView with the tags.
 
-Main view:
+### Main view:
 
 ![Screenshot1](mainView.png)
 
 
-Details view:
+### Details view:
 
 ![Screenshot2](detailView.png)
 
