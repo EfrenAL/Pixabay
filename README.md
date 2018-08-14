@@ -26,9 +26,9 @@ When the app starts it should trigger a search for the string “fruits”
 
 The architecture decided to use is MVVM using Architecture Components. 
 
-It allows to unit test every layer and keep view logic and buisines logic independent.
+It allows to unit test every layer and keep view logic and business logic independent.
 
-Project is using repository parttern and it is caching the data only in memory but to include other caching mechanisms as Room, Sqlite or Realm, should not a big effort due the layer independency.
+This project is using repository pattern and it is caching the data only in memory. Should be easy to include other caching mechanisms as Room, Sqlite or Realm, due to the choosen architecture.
 
 Project is also using RxJava to request the data and Dagger2 to do the dependency injection. 
 
@@ -41,7 +41,7 @@ The next image represent the architecture used and the improvements that can be 
 
 Project is following Material Design guidelines. 
 
-To display the images was used a RecyclerView Grid comosed by CardViews. Inside each cardview we have a another horizontal RecyclerView with the tags.
+To display the images was used a RecyclerView Grid composed by CardViews. Inside each cardview we have a another horizontal RecyclerView with the tags.
 
 ### Main view:
 
