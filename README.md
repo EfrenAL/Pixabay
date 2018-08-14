@@ -2,6 +2,26 @@
 
 Android Application which uses the [PixaBay](https://pixabay.com/en/) Api to search for Images.
 
+## Requirements
+
+The user should be able to search for images entering one or more words in a text field. Display a list of results. Each entry should show:
+• A thumbnail of the image
+• The Pixabay user name
+• A list of image’s tag
+
+Clicking on a list item the app should open a dialog asking the user if he wants to see more details. In case of a
+positive answer a new detail screen should be opened. The detail screen should contain:
+• A bigger version of the image
+• The name of the user
+• A list of image’s tag
+• The number of likes
+• The number of favorites
+• The number of comments
+
+When the app starts it should trigger a search for the string “fruits”
+
+
+
 ## Implementation Details
 
 The architecture decided to use is MVVM using Architecture Components. 
