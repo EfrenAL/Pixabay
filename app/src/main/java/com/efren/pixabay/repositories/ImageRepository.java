@@ -2,22 +2,17 @@ package com.efren.pixabay.repositories;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
-import android.util.Log;
 import android.view.View;
-
 import com.efren.pixabay.base.Constants;
 import com.efren.pixabay.base.PixabayApi;
 import com.efren.pixabay.model.Image;
 import com.efren.pixabay.model.ImageRequestResponse;
 import java.util.ArrayList;
-import java.util.List;
-
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-
 
 /**
  * Created by efren.lamolda on 07.08.18.
@@ -43,6 +38,8 @@ public class ImageRepository {
     public MutableLiveData<ArrayList<Image>> getImages(String query){
 
         query = query.replaceAll("\\s+","+");
+
+        //ToDo: Use room to cache data. If data is not stored in db request data from API, store in db and give it back
 
         subscription = pixabayApi.getImages(Constants.API_KEY, query, Constants.API_IMAGE_TYPE)
                 .subscribeOn(Schedulers.io())
