@@ -32,3 +32,12 @@ Details view:
 
 ![Screenshot2](detailView.png)
 
+## Libraries
+
+ 1. RxJava
+ 2. Retrofit
+ 3. Glide
+ 4. ButterKnife
+ 5. Dagger2
+ 
+ 
